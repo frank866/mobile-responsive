@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link rel="stylesheet" href="./all.min.css">
+</head>
+<body>
+    <header>
+
+        <div class="logo display">
+            
+            <div class="big-square">
+                <div class="small-square"></div>
+            </div>
+
+            <h3><span>L</span>OG<span>-O</span></h3>
+
+        </div>
+
+        <div class="header-navigation display">
+
+            <nav>
+                <ul class="display">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Profile</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Contacts</a></li>
+                    <li><a href="#">Shop</a></li>
+                </ul>
+            </nav>
+
+            <div class="icon">
+                <i class="fa fa-bars"></i>
+            </div>
+
+        </div>
+
+    </header>
+
+    <main class="display">
+
+        <article>
+
+            <h2 class="color">Nickotee</h2>
+            <p>Landing Page Design</p>
+    
+            <div class="info">
+                <a href="#" class="sign-up">Sign Up</a>
+                <a href="#" id="more" class="color">Show more</a>
+            </div>
+
+        </article>
+
+        <div class="page-image">
+            <img src="./work-image.png" alt="...">
+        </div>
+
+    </main>
+
+    <script>
+        var menu = document.querySelector('nav');
+        var menuBar = document.querySelector('.icon');
+        document.querySelector('.icon').addEventListener('click', function(){
+            if (menu.style.display == 'none') {
+                menu.style.display = 'flex';
+            } else {
+                menu.style.display = 'none';
+            }
+        })
+
+        document.querySelector('main').addEventListener('click', function(){
+            if (menu.style.display == 'flex'){
+                menu.style.display = 'none'
+            }
+        })
+    </script>
+
+</body>
+</html>
